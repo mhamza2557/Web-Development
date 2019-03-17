@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Sniglet');
+* {
+    margin: 0;
+}
+
+.headerSpan {
+    font-family: 'Sniglet', cursive;
+}
+
+.top {
+    width: 100%;
+    background-color: #282a3c;
+    padding: -0.5%;
+    color: white;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: black !important;
+}
+
+.logoPng {
+    width: 60px;
+}
+
+@media screen and (min-width: 680px) {
+    .box {
+        float: left;
+        width: 23%;
+    }
+    iframe {
+        width: 130%;
+        height: 250px;
+    }
+}
+
+html,
+body {
+    margin: 0;
+}
+
+.containerBox {
+    color: white;
+    background-color: dimgray;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    padding-top: 1%;
+}
+
+.footer-bottom {
+    position: absolute;
+    text-align: center;
+    margin-top: -0.8%;
+    padding-top: 0.5%;
+    padding-bottom: 0.1%;
+    width: 100%;
+    background-color: grey;
+    color: white;
+}
+
+li {
+    list-style-type: none;
+}
+
+.un-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+.un-list li a:hover {
+    color: dodgerblue;
+}
