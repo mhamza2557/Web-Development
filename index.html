@@ -44,11 +44,14 @@
     </div>
 
     <script>
+        $(function() {
+            $("#preload").fadeOut(4000, function() {
+                $("#content").fadeIn(1000);
+            });
+        });
         var myIndex = 0;
         carousel();
     </script>
 </body>
-<!-- For jquery -->
-<script type="text/javascript" src="js\index.js"></script>
 
 </html>

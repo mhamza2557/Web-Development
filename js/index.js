@@ -1,9 +1,3 @@
-$(function() {
-    $("#preload").fadeOut(4000, function() {
-        $("#content").fadeIn(1000);
-    });
-});
-
 function carousel() {
     var i;
     var x = document.getElementsByClassName("mySlides");
