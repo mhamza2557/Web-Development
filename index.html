@@ -1,244 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Gallery</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-        
-        body {
-            margin: 5px;
-            position: relative;
-        }
-        
-        #gallery {
-            display: grid;
-            height: calc(100vh - 10px);
-            grid-template: repeat(6, 1fr)/repeat(6, 1fr);
-            grid-gap: 0.5em;
-        }
-        
-        @media (max-width: 800px) {
-            #gallery {
-                display: flex;
-                align-items: flex-start;
-                flex-wrap: wrap;
-                height: 0%;
-            }
-            #gallery>div {
-                width: 48%;
-                margin: 1%;
-            }
-        }
-        
-        @media (max-width: 800px) and (max-width: 350px) {
-            #gallery>div {
-                width: 98%;
-            }
-        }
-        
-        #gallery>div:nth-child(6n + 1) {
-            grid-column: span 2;
-            grid-row: span 2;
-        }
-        
-        #gallery>div:nth-child(2) {
-            grid-column: span 3;
-            grid-row: span 3;
-        }
-        
-        #gallery>div:nth-child(4) {
-            grid-column: span 1;
-            grid-row: span 2;
-        }
-        
-        #gallery>div>a {
-            opacity: 0;
-            position: absolute;
-            color: #000;
-            background-color: #000;
-            font: bold 4em "Helvetica";
-            text-shadow: 0 -1px 5px #fff, -1px 0px 5px #fff, 0 1px 5px #fff, 1px 0px 5px #fff;
-            padding: 2rem;
-            mix-blend-mode: difference;
-            width: 100%;
-            height: 100%;
-            transition: all ease 1s;
-        }
-        
-        #gallery>div>img {
-            width: 100%;
-            min-height: 100%;
-            transition: all ease 1s;
-        }
-        
-        #gallery>div:hover img {
-            filter: blur(4px);
-        }
-        
-        #gallery>div:hover a {
-            opacity: 1;
-        }
-        
-        #gallery>div {
-            overflow: hidden;
-            position: relative;
-            box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.19);
-        }
-        
-        #gallery div,
-        #gallery a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
-        }
-        
-        [id^="mimg-"] {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background-color: rgba(0, 0, 0, 0.5);
-            display: flex;
-            opacity: 0;
-            transition: opacity 450ms ease-in-out;
-            align-items: center;
-            justify-content: center;
-            pointer-events: none;
-        }
-        
-        [id^="mimg-"]:target {
-            opacity: 1;
-            pointer-events: inherit;
-        }
-        
-        [id^="mimg-"]:target img {
-            filter: blur(0);
-        }
-        
-        [id^="mimg-"] .content {
-            max-width: 90%;
-            position: relative;
-            color: #fff;
-        }
-        
-        [id^="mimg-"] .content:hover>a.close {
-            opacity: 1;
-            transform: scale(1, 1);
-        }
-        
-        [id^="mimg-"] .content:hover>.title {
-            opacity: 1;
-            transform: translateY(-3px);
-        }
-        
-        [id^="mimg-"] .content:hover>.title::after {
-            opacity: 1;
-        }
-        
-        [id^="mimg-"] .content>* {
-            transition: all 450ms ease-in-out;
-        }
-        
-        [id^="mimg-"] .title {
-            display: block;
-            margin: 0;
-            padding: 1em;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            transform: translateY(50%);
-            font-size: 1.5em;
-            opacity: 0;
-        }
-        
-        [id^="mimg-"] .title::after {
-            content: ' ';
-            background-color: rgba(0, 0, 0, 0.4);
-            bottom: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            transition: all 350ms ease-in-out 250ms;
-            opacity: 0;
-            transform-origin: bottom;
-            mix-blend-mode: soft-light;
-        }
-        
-        [id^="mimg-"] img {
-            max-height: 90vh;
-            max-width: 100%;
-            margin: 0;
-            padding: 0;
-            filter: blur(50px);
-        }
-        
-        [id^="mimg-"] a.close {
-            width: 2em;
-            height: 2em;
-            position: absolute;
-            right: 0;
-            top: 0;
-            background-color: rgba(0, 0, 0, 0.5);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transform: scale(0, 0);
-            opacity: 0;
-            transform-origin: right top;
-            text-decoration: none;
-            color: #fff;
-        }
-        
-        [id^="mimg-"] a.close::after {
-            content: "X";
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moorad Travels</title>
+    <link rel="stylesheet" href="css\index.css">
+    <script type="text/javascript" src="js\index.js"></script>
+
 </head>
 
 <body>
-    <div id="header"></div>
+    <video autoplay muted loop id="myvideo">
+        <source src="videos\Main_Page.mp4" type="video/mp4">
+    </video>
 
-    <div id="gallery">
-        <div><img src="Photos\1.jpg"><a href="#mimg-1">1</a></div>
-        <div><img src="Photos\2.jpg"><a href="#mimg-2">2</a></div>
-        <div><img src="Photos\3.jpg"><a href="#mimg-3">3</a></div>
-        <div><img src="Photos\4.jpg"><a href="#mimg-4">4</a></div>
-        <div><img src="Photos\5.jpg"><a href="#mimg-5">5</a></div>
-
-        <div><img src="Photos\1.jpg"><a href="#mimg-1">1</a></div>
-        <div><img src="Photos\2.jpg"><a href="#mimg-2">2</a></div>
-        <div><img src="Photos\3.jpg"><a href="#mimg-3">3</a></div>
-        <div><img src="Photos\4.jpg"><a href="#mimg-4">4</a></div>
-        <div><img src="Photos\5.jpg"><a href="#mimg-5">5</a></div>
-        <div><img src="Photos\1.jpg"><a href="#mimg-1">1</a></div>
-        <div><img src="Photos\2.jpg"><a href="#mimg-2">2</a></div>
-        <div><img src="Photos\3.jpg"><a href="#mimg-3">3</a></div>
-        <div><img src="Photos\4.jpg"><a href="#mimg-4">4</a></div>
-        <div><img src="Photos\5.jpg"><a href="#mimg-5">5</a></div>
-        <div><img src="Photos\1.jpg"><a href="#mimg-1">1</a></div>
-        <div><img src="Photos\2.jpg"><a href="#mimg-2">2</a></div>
-        <div><img src="Photos\3.jpg"><a href="#mimg-3">3</a></div>
-    </div>
-
-    <div class="mimg" id="mimg-1">
-        <div class="content">
-            <img src="Photos\1.jpg">
-            <div class="title">Moorad Travel</div>
-            <a class="close" href="#gallery"></a>
+    <footer class="containerBox">
+        <div class="box1 box"><img src="images\TAAP.png"></div>
+        <div class="box2 box">
+            <img class="mySlides" src="images\emirates.png">
+            <img class="mySlides" src="images\pia.png">
+            <img class="mySlides" src="images\airblue.png">
+            <img class="mySlides" src="images\british_airways.png">
+            <img class="mySlides" src="images\shaheen.png">
+            <img class="mySlides" src="images\etihad.png">
+            <img class="mySlides" src="images\flydubai.png">
+            <img class="mySlides" src="images\qatar.png">
+            <img class="mySlides" src="images\sarena.png">
+            <img class="mySlides" src="images\singapore.png">
         </div>
+        <div class="box3 box"><img src="images\IATA.png"></div>
+    </footer>
+
+    <div class="content3">
+        <a href="Gallery.html"><img src="images\Main_Logo.png"></a>
     </div>
 
-    <div id="footer"></div>
-
-    <script type="text/javascript" src="Gallery.js"></script>
+    <script>
+        var myIndex = 0;
+        carousel();
+    </script>
 </body>
 
 </html>
