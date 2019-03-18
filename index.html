@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moorad Travels</title>
+    <link rel="stylesheet" href="css\index.css">
+    <!-- For JavaScript -->
+    <script type="text/javascript" src="js\index.js"></script>
+    <script src="js/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div id="preload"><img src="images\gear_spinner.svg"></div>
+
+    <div id="content">
+        <video autoplay muted loop id="myvideo">
+                    <source src="videos\Main_Page.mp4" type="video/mp4">
+                </video>
+
+        <footer class="containerBox">
+            <div class="box1 box"><img src="images\TAAP.png"></div>
+            <div class="box2 box">
+                <img class="mySlides" src="images\emirates.png">
+                <img class="mySlides" src="images\pia.png">
+                <img class="mySlides" src="images\airblue.png">
+                <img class="mySlides" src="images\british_airways.png">
+                <img class="mySlides" src="images\shaheen.png">
+                <img class="mySlides" src="images\etihad.png">
+                <img class="mySlides" src="images\flydubai.png">
+                <img class="mySlides" src="images\qatar.png">
+                <img class="mySlides" src="images\sarena.png">
+                <img class="mySlides" src="images\singapore.png">
+            </div>
+            <div class="box3 box"><img src="images\IATA.png"></div>
+        </footer>
+
+        <div class="content3">
+            <a href="Gallery.html"><img src="images\Main_Logo.png"></a>
+        </div>
+    </div>
+
+    <script>
+        $(function() {
+            $("#preload").fadeOut(4000, function() {
+                $("#content").fadeIn(1000);
+            });
+        });
+        var myIndex = 0;
+        carousel();
+    </script>
+</body>
+
+</html>

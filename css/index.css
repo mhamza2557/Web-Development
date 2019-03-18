@@ -1,0 +1,104 @@
+#content {
+    display: none;
+}
+
+#preload {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 680px) {
+    .box {
+        float: left;
+        width: 16%;
+        margin-left: 13%;
+    }
+    iframe {
+        width: 130%;
+        height: 1px;
+    }
+    .box2 img {
+        padding: 12%;
+        width: 50% !important;
+    }
+    .box1 img {
+        padding: 12%;
+        width: 50% !important;
+    }
+    .box3 img {
+        width: 60% !important;
+        padding-top: 0%;
+    }
+}
+
+.box {
+    float: left;
+    width: 16%;
+    margin-left: 13%;
+}
+
+html,
+body {
+    margin: 0;
+}
+
+.containerBox {
+    bottom: 0%;
+    position: relative;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    padding-top: 1%;
+}
+
+.box2 img {
+    padding: 12%;
+    width: 80%;
+}
+
+.box1 img {
+    padding: 12%;
+    width: 70%;
+}
+
+.box3 img {
+    width: 85%;
+    padding-top: 0%;
+}
+
+#myvideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.mySlides {
+    display: none;
+    margin: 3%;
+    margin-right: 25%;
+    margin-left: 15%;
+}
+
+.content3 {
+    margin-left: 31%;
+    bottom: 51%;
+    height: 20%;
+    width: 20%;
+    padding: 2%;
+}
+
+.content3 img {
+    margin-right: 40%;
+    margin-left: 40%;
+    width: 80%;
+    height: 80%;
+    filter: brightness(1000%);
+}
