@@ -19,7 +19,7 @@
         <header class="top">
             <div>
                 <nav class="navbar navbar-expand-lg navbar-dark nav1">
-                    <i class="fas fa-phone-volume"><span class="headerSpan"> | 0323-2037537 | mooradtravels@cybernet.pk</span></i>
+                    <i class="fas fa-phone-volume"><span class="headerSpan"> | 0323-2037537 | mooradtravels@cyber.net.pk</span></i>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -59,21 +59,34 @@
         <form class="model1-content animate fm">
             <div class="imgcontainer">
                 <span id="popup1" class="close" title="Close model1">&times;</span>
-                <img src="images/Login.png" alt="male" class="image">
+                <img src="images\Login.png" alt="male" class="image">
             </div>
             <div class="container">
                 <label><b>E-mail</b></label>
-                <input type="text" placeholder="Enter Your E-mail" name="email" required>
+                <input type="email" placeholder="Enter Your E-mail" name="email" required>
                 <label><b>Password</b></label>
-                <input type="Password" placeholder="Enter Password" name="psw" required>
+                <input type="password" placeholder="Enter Password" id="myInput"><br><br>
+                <input type="checkbox" onclick="myFunction()">Show Password
                 <button type="submit">Login</button>
                 <input type="checkbox" checked="checked">Remember me</div>
             <div class="container" style="background-color: #f1f1f1">
-                <button type="button" id="popup1" class=cancelbtn>Cancel</button>
+                <button type="button" id="popup2" class=cancelbtn>Cancel</button>
                 <span class="psw">Forgot  <a href="#">Password?</a></span>
             </div>
         </form>
     </div>
+
+    <script type="text/javascript">
+        function myFunction() {
+            var x = document.getElementById("myInput");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
+
     <script src="js\Header.js"></script>
 </body>
 <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
