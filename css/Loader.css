@@ -1,11 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700");
-@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
 #preload {
     width: 100%;
     height: 100%;
-}
-
-#preload {
     box-sizing: border-box;
     display: flex;
     align-items: center;
