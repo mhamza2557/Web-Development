@@ -1,0 +1,268 @@
+#content {
+    display: none;
+    /* background-color: brown; */
+    min-height: -webkit-fill-available;
+}
+
+
+/* #preload {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+} */
+
+@import url('https://fonts.googleapis.com/css?family=Playball');
+.hotel_booking {
+    box-shadow: 12px 12px 29px #555;
+    transition: background-image 1s ease-in-out;
+    height: 80%;
+    width: 100%;
+    margin-top: 0%;
+    background-color: #F8F8FF;
+}
+
+.hotel_booking img {
+    height: 100%;
+    width: 100%;
+}
+
+.hotel_booking:hover {
+    height: 90%;
+    width: 90%;
+    transition: circle 1s ease-in-out;
+    margin-top: 0%;
+}
+
+.hotel_booking h3 {
+    font-family: verdana;
+    text-align: center;
+    text-shadow: 12px 12px 29px #555;
+    font-weight: bold;
+}
+
+.hotel_booking h2 {
+    font-family: verdana;
+    text-align: center;
+    text-shadow: 12px 12px 29px #555;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: verdana;
+    text-align: center;
+    text-shadow: 12px 12px 29px #555;
+    font-weight: bold;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+h1 {
+    font-family: Baskerville Old Face;
+}
+
+
+/*css for h1*/
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.glow {
+    font-size: 80px;
+    font-family: 'Playball', cursive;
+    color: #996633;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #cc9966, 0 0 40px #cc9966, 0 0 50px #cc9966, 0 0 60px #cc9966, 0 0 70px #cc9966;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #6B8E23, 0 0 40px #6B8E23, 0 0 50px #6B8E23, 0 0 60px #6B8E23, 0 0 70px #6B8E23, 0 0 80px #6B8E23;
+    }
+}
+
+
+/*center css*/
+
+.center {
+    /*     // margin: 10% auto;*/
+    padding-bottom: 6%;
+}
+
+.awesome {
+    font-family: 'Playball', cursive;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: #313131;
+    font-size: 45px;
+    font-weight: bold;
+    position: absolute;
+    -webkit-animation: colorchange 20s infinite alternate;
+}
+
+
+/*bo*/
+
+.jssorl-009-spin img {
+    animation-name: jssorl-009-spin;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes jssorl-009-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.jssorb057 .i {
+    position: absolute;
+    cursor: pointer;
+}
+
+.jssorb057 .i .b {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2000;
+    stroke-miterlimit: 10;
+    stroke-opacity: 0.4;
+}
+
+.jssorb057 .i:hover .b {
+    stroke-opacity: .7;
+}
+
+.jssorb057 .iav .b {
+    stroke-opacity: 1;
+}
+
+.jssorb057 .i.idn {
+    opacity: .3;
+}
+
+.jssora073 {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+}
+
+.jssora073 .a {
+    fill: #ddd;
+    fill-opacity: .7;
+    stroke: #000;
+    stroke-width: 160;
+    stroke-miterlimit: 10;
+    stroke-opacity: .7;
+}
+
+.jssora073:hover {
+    opacity: .8;
+}
+
+.jssora073.jssora073dn {
+    opacity: .4;
+}
+
+.jssora073.jssora073ds {
+    opacity: .3;
+    pointer-events: none;
+}
+
+.bg {
+    margin-top: 8%;
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 10px 12px;
+    position: absolute;
+    font-weight: bold;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+}
+
+.heading1 {
+    font-family: 'Playball', cursive;
+    text-align: center;
+    font-weight: bold;
+    color: #666633;
+    margin-bottom: 3%;
+}
+
+.heading2 {
+    font-family: 'Playball', cursive;
+    text-align: center;
+    font-weight: bold;
+    color: #888844;
+    letter-spacing: 3px;
+    margin-bottom: 3%;
+}
+
+.ft {
+    width: 100%;
+}
+
+.ft img {
+    width: 10%;
+    height: 5%;
+    margin-bottom: 2%;
+}
+
+.haaj_umrah {
+    color: #669999;
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Playball', cursive;
+}
+
+.haaj_umrah>p {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+}
+
+
+}
+
+/*paragraph css*/
+.t1 {
+    border: 5px solid gray;
+    padding: 8px;
+}
+.p1 {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-indent: 50px;
+    text-align: justify;
+    letter-spacing: 2px;
+    font-size: 24px;
+    font-family: 'Playball', cursive;
+    color: #888844;
+}

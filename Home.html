@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home - Moorad Travels</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist\css\bootstrap.css">
+    <script src="js\jqueery.js"></script>
+    <script src="bootstrap-4.3.1-dist\js\bootstrap.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="css\homepic.css">
+    <link rel="stylesheet" href="css\Loader.css">
+    <link rel="stylesheet" type="text/css" href="css\slider.css">
+    <link rel="stylesheet" type="text/css" href="css\swiper.min.css">
+    <link rel="stylesheet" href="css\w3school.css">
+    <!-- icon -->
+    <link rel="icon" type="image/png" href="123.png">
+</head>
+
+<style>
+    .marqueeViewer {
+        background: url(images/10.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 70px;
+    }
+    
+    .marqueePlay {
+        margin-top: 27%;
+    }
+    
+    img {
+        width: 8%;
+        margin: 0% 1%;
+    }
+    
+    .w3-content img {
+        max-height: 500px;
+        position: relative;
+    }
+</style>
+
+
+<body style="background-color: #fff5e6">
+    <div id="preload">
+        <svg class="svg-calLoader" xmlns="http://www.w3.org/2000/svg" width="230" height="230">
+            <path class="cal-loader__path" d="M86.429 40c63.616-20.04 101.511 25.08 107.265 61.93 6.487 41.54-18.593 76.99-50.6 87.643-59.46 19.791-101.262-23.577-107.142-62.616C29.398 83.441 59.945 48.343 86.43 40z" fill="none" stroke="#0099cc" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="10 10 10 10 10 10 10 432" stroke-dashoffset="77"/>
+            <path class="cal-loader__plane" d="M141.493 37.93c-1.087-.927-2.942-2.002-4.32-2.501-2.259-.824-3.252-.955-9.293-1.172-4.017-.146-5.197-.23-5.47-.37-.766-.407-1.526-1.448-7.114-9.773-4.8-7.145-5.344-7.914-6.327-8.976-1.214-1.306-1.396-1.378-3.79-1.473-1.036-.04-2-.043-2.153-.002-.353.1-.87.586-1 .952-.139.399-.076.71.431 2.22.241.72 1.029 3.386 1.742 5.918 1.644 5.844 2.378 8.343 2.863 9.705.206.601.33 1.1.275 1.125-.24.097-10.56 1.066-11.014 1.032a3.532 3.532 0 0 1-1.002-.276l-.487-.246-2.044-2.613c-2.234-2.87-2.228-2.864-3.35-3.309-.717-.287-2.82-.386-3.276-.163-.457.237-.727.644-.737 1.152-.018.39.167.805 1.916 4.373 1.06 2.166 1.964 4.083 1.998 4.27.04.179.004.521-.076.75-.093.228-1.109 2.064-2.269 4.088-1.921 3.34-2.11 3.711-2.123 4.107-.008.25.061.557.168.725.328.512.72.644 1.966.676 1.32.029 2.352-.236 3.05-.762.222-.171 1.275-1.313 2.412-2.611 1.918-2.185 2.048-2.32 2.45-2.505.241-.111.601-.232.82-.271.267-.058 2.213.201 5.912.8 3.036.48 5.525.894 5.518.914 0 .026-.121.306-.27.638-.54 1.198-1.515 3.842-3.35 9.021-1.029 2.913-2.107 5.897-2.4 6.62-.703 1.748-.725 1.833-.594 2.286.137.46.45.833.872 1.012.41.177 3.823.24 4.37.085.852-.25 1.44-.688 2.312-1.724 1.166-1.39 3.169-3.948 6.771-8.661 5.8-7.583 6.561-8.49 7.387-8.702.233-.065 2.828-.056 5.784.011 5.827.138 6.64.09 8.62-.5 2.24-.67 4.035-1.65 5.517-3.016 1.136-1.054 1.135-1.014.207-1.962-.357-.38-.767-.777-.902-.893z" class="cal-loader__plane" fill="#000033"/>
+          </svg>
+    </div>
+    <div id="content">
+        <div id="header"></div>
+        <div class="w3-container">
+            <div class="w3-content w3-section" style="max-width:100%">
+                <img class="mySlides w3-animate-top" src="images\aus1.jpg" style="width:100%">
+                <img class="mySlides w3-animate-bottom" src="images\aus2.jpg" style="width:100%">
+                <img class="mySlides w3-animate-left" src="images\canada1.jpg" style="width:100%">
+                <img class="mySlides w3-animate-right" src="images\canada3.jpg" style="width:100%">
+                <img class="mySlides w3-animate-top" src="images\canada4.jpg" style="width:100%">
+                <img class="mySlides w3-animate-bottom" src="images\dubai2.jpg" style="width:100%">
+                <img class="mySlides w3-animate-left" src="images\dubai3.jpg" style="width:100%">
+                <img class="mySlides w3-animate-right" src="images\img1.jpg" style="width:100%">
+                <img class="mySlides w3-animate-top" src="images\img2.jpg" style="width:100%">
+                <img class="mySlides w3-animate-bottom" src="images\img4.jpg" style="width:100%">
+                <img class="mySlides w3-animate-left" src="images\img6.jpg" style="width:100%">
+                <img class="mySlides w3-animate-right" src="images\img7.jpg" style="width:100%">
+                <img class="mySlides w3-animate-top" src="images\img8.jpg" style="width:100%">
+                <img class="mySlides w3-animate-bottom" src="images\img9.jpg" style="width:100%">
+                <img class="mySlides w3-animate-left" src="images\london1.jpg" style="width:100%">
+                <img class="mySlides w3-animate-right" src="images\london2.jpg" style="width:100%">
+                <img class="mySlides w3-animate-top" src="images\london3.jpg" style="width:100%">
+                <img class="mySlides w3-animate-bottom" src="images\pic4.jpg" style="width:100%">
+                <img class="mySlides w3-animate-left" src="images\pic6.jpg" style="width:100%">
+                <img class="mySlides w3-animate-right" src="images\pic8.jpg" style="width:100%">
+                <img class="mySlides w3-animate-top" src="images\pic9.jpg" style="width:100%">
+                <img class="mySlides w3-animate-bottom" src="images\pic12.jpg" style="width:100%">
+                <img class="mySlides w3-animate-left" src="images\pic15.jpg" style="width:100%">
+                <img class="mySlides w3-animate-right" src="images\switzerland1.jpg" style="width:100%">
+                <img class="mySlides w3-animate-top" src="images\switzerland2.jpg" style="width:100%">
+                <img class="mySlides w3-animate-bottom" src="images\switzerland3.jpg" style="width:100%">
+                <img class="mySlides w3-animate-right" src="images\switzerland4.jpg" style="width:100%">
+            </div>
+        </div>
+
+        <br><br><br><br><br>
+        <div class="haaj_umrah">
+            <p>Makkah &amp; Madina</p>
+        </div>
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <img src="images\makkah.jpg">
+                    <div class="text">Makkah</div>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="images\madina1.jpg">
+                    <div class="text">Medina</div>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="images\makkah2.jpg">
+                    <div class="text">Makkah</div>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="images\makkah3.jpg">
+                    <div class="text">Makkah</div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images\makkah4.jpg">
+                    <div class="text">Makkah</div>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="images\madina.jpg">
+                    <div class="text">Medina</div>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="images\meeca.jpg">
+                    <div class="text">Makkah</div>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="images\meeca1.jpg">
+                    <div class="text">Makkah</div>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="images\saudia.jpg">
+                    <div class="text">Makkah</div>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="images\ramadan.jpg">
+                    <div class="text">Ramadan</div>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="images\makkah4.jpg">
+                    <div class="text">Makkah</div>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="images\madina4.jpg">
+                    <div class="text">Medina</div>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="images\Medina.jpg">
+                    <div class="text">Medina</div>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="images\Medina1.jpg">
+                    <div class="text">Medina</div>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="images\makkah-.jpg">
+                    <div class="text">Makkah</div>
+                </div>
+            </div>
+
+
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <!-- Swiper JS -->
+
+
+
+        <div class="bg">
+            <h1 class="heading1">POPULAR DESTINATIONS</h1>
+            <h3 class="heading2">CHOOSE YOUR NEXT DESTINATION</h3>
+
+            <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:150px;overflow:hidden;visibility:hidden;">
+                <!-- Loading Screen -->
+                <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+                    <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="spin.svg" />
+                </div>
+
+                <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:150px;overflow:hidden;">
+                    <div>
+                        <img data-u="image" src="images\Dubai-2016-9838.jpg" />
+                        <div class="text">Dubai</div>
+                    </div>
+
+                    <div>
+                        <img data-u="image" src="images\greece1.jpg" />
+                        <div class="text">Greece</div>
+                    </div>
+
+                    <div>
+                        <img data-u="image" src="images\singapore.2.jpg" />
+                        <div class="text">Singapore</div>
+                    </div>
+
+                    <div>
+                        <img data-u="image" src="images\photo-1526958977630-bc61b30a2009.jpg" />
+                        <div class="text">Australia</div>
+                    </div>
+
+                    <div>
+                        <img data-u="image" src="images\german.jpg" />
+                        <div class="text">German</div>
+                    </div>
+
+                    <div>
+                        <img data-u="image" src="images\Malaysia1.jpg" />
+                        <div class="text">Malaysia</div>
+                    </div>
+
+                    <div>
+                        <img data-u="image" src="images\hong-kong.png" />
+                        <div class="text">Hong-kong</div>
+                    </div>
+
+                    <div>
+                        <img data-u="image" src="images\China2.jpg" />
+                        <div class="text">China</div>
+                    </div>
+
+                    <div>
+                        <img data-u="image" src="images\south.jpg" />
+                        <div class="text">South Africa</div>
+                    </div>
+
+                    <div>
+                        <img data-u="image" src="images\france.jpg" />
+                        <div class="text">France</div>
+                    </div>
+
+                    <div>
+                        <img data-u="image" src="images\63950-640x360-london-icons2-640.jpg" />
+                        <div class="text">London</div>
+                    </div>
+
+                    <div>
+                        <img data-u="image" src="images\Bangkok.jpg" />
+                        <div class="text">BangKok</div>
+                    </div>
+
+                    <div>
+                        <img data-u="image" src="images\@david_fossa-2.jpg" />
+                        <div class="text">Paris</div>
+                    </div>
+
+                    <div>
+                        <img data-u="image" src="images\japan.jpg" />
+                        <div class="text">Japan</div>
+                    </div>
+
+                    <div>
+                        <img data-u="image" src="images\Bangkok2.jpg" />
+                        <div class="text">BangKok</div>
+
+                    </div>
+
+                    <div>
+                        <img data-u="image" src="images\Thailand.jpg" />
+                        <div class="text">Thailand</div>
+                    </div>
+                </div>
+
+                <!-- Bullet Navigator -->
+                <div data-u="navigator" class="jssorb057" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+                    <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                        <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <circle class="b" cx="8000" cy="8000" r="5000"></circle>
+                </svg>
+                    </div>
+                </div>
+
+                <!-- Arrow Navigator -->
+                <div data-u="arrowleft" class="jssora073" style="width:50px;height:50px;top:0px;left:30px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+                    <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <path class="a" d="M4037.7,8357.3l5891.8,5891.8c100.6,100.6,219.7,150.9,357.3,150.9s256.7-50.3,357.3-150.9 l1318.1-1318.1c100.6-100.6,150.9-219.7,150.9-357.3c0-137.6-50.3-256.7-150.9-357.3L7745.9,8000l4216.4-4216.4 c100.6-100.6,150.9-219.7,150.9-357.3c0-137.6-50.3-256.7-150.9-357.3l-1318.1-1318.1c-100.6-100.6-219.7-150.9-357.3-150.9 s-256.7,50.3-357.3,150.9L4037.7,7642.7c-100.6,100.6-150.9,219.7-150.9,357.3C3886.8,8137.6,3937.1,8256.7,4037.7,8357.3 L4037.7,8357.3z"></path>
+            </svg>
+                </div>
+
+                <div data-u="arrowright" class="jssora073" style="width:50px;height:50px;top:0px;right:30px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+                    <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <path class="a" d="M11962.3,8357.3l-5891.8,5891.8c-100.6,100.6-219.7,150.9-357.3,150.9s-256.7-50.3-357.3-150.9 L4037.7,12931c-100.6-100.6-150.9-219.7-150.9-357.3c0-137.6,50.3-256.7,150.9-357.3L8254.1,8000L4037.7,3783.6 c-100.6-100.6-150.9-219.7-150.9-357.3c0-137.6,50.3-256.7,150.9-357.3l1318.1-1318.1c100.6-100.6,219.7-150.9,357.3-150.9 s256.7,50.3,357.3,150.9l5891.8,5891.8c100.6,100.6,150.9,219.7,150.9,357.3C12113.2,8137.6,12062.9,8256.7,11962.3,8357.3 L11962.3,8357.3z"></path>
+            </svg>
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+        <div class="t1">
+            <p class="p1">Don’t you want to chill out with your family and friend and have a nice peaceful event or a tour to a beautiful place? Well if that’s the case then you have come to the right travel agency because Moorad travel will provide you packages to
+                the most popular places in the world which updates frequently. Wherever top and finest places you want to go, Moorad travel will provide you the best packages. Some of them are shown below and there are many more. </p>
+        </div>
+
+        <br>
+
+        <h1 class="glow">Why Moorad Travel</h1>
+
+        <br>
+
+        <div class="t1">
+            <p class="p1">
+                Moorad travel is a modern type of a travel agency which helps you into booking any hotel while giving the finest International travelling, tours and transport while providing you the 100% guarantee visa with no worries and problems and even gives some
+                discount on religious trips regardless to your religion. To have a pleasurable and relaxation time with your family and friends.
+            </p>
+        </div>
+        <br><br>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="hotel_booking">
+                        <h3>International Transport</h3>
+                        <img src="images\travel transport1.jpg" class="img-responsive" alt="Image">
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="hotel_booking">
+                        <h2>Hotel Booking</h2>
+                        <img src="images\hotel.jpg" class="img-responsive" alt="Image">
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="hotel_booking">
+                        <h2>Travels &amp; Tours</h2>
+                        <img src="images\tour.jpg" class="img-responsive" alt="Image">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="hotel_booking">
+                        <h2>Hajj</h2>
+                        <img src="images\haaj.jpg" class="img-responsive" alt="Image">
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="hotel_booking">
+                        <h2>Umrah</h2>
+                        <img src="images\umrah.jpg" class="img-responsive" alt="Image">
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="hotel_booking">
+                        <h2>VISA</h2>
+                        <img src="images\visa.png" class="img-responsive" alt="Image">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <br><br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <div class="marqueeViewer">
+            <div class="marqueePlay">
+                <marquee>
+                    <img src="images\0.png">
+                    <img src="images\1.png">
+                    <img src="images\2.png">
+                    <img src="images\3.png">
+                    <img src="images\4.png">
+                    <img src="images\5.png">
+                    <img src="images\6.png">
+                    <img src="images\7.png">
+                    <img src="images\8.png">
+                    <!-- <img src="images\9.png"> -->
+                </marquee>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <script type="text/javascript" src="js\swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+
+    <script type="text/javascript" src="js\jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js\jssor.slider.min.js"></script>
+    <script type="text/javascript" src="js/Gallery.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $("#preload").fadeOut(4000, function() {
+                $("#content").fadeIn(1000);
+            });
+        });
+
+        jQuery(document).ready(function($) {
+
+            var jssor_1_options = {
+                $AutoPlay: 1,
+                $AutoPlaySteps: 4,
+                $SlideDuration: 160,
+                $SlideWidth: 200,
+                $SlideSpacing: 3,
+                $ArrowNavigatorOptions: {
+                    $Class: $JssorArrowNavigator$,
+                    $Steps: 5
+                },
+                $BulletNavigatorOptions: {
+                    $Class: $JssorBulletNavigator$
+                }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            var MAX_WIDTH = 980;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                } else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+
+        });
+
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2500);
+        }
+
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+    <!-- <script type="text/javascript" src="js/Gallery.js"></script> -->
+</body>
+
+</html>
