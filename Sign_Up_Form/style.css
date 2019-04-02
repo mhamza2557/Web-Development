@@ -1,0 +1,26 @@
+    body {
+            background-image: url(6.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+        }
+        .btn{
+           border-radius: 10px;
+            width: 20%;
+            height: 10%;
+        }
+        
+        #ui {
+            background-color: #333;
+            padding: 35px;
+            margin-top: 25%;
+            border-radius: 10px;
+            opacity: 0.8;
+        }
+        
+        #ui label,
+        h2 {
+            color: #fff;
+        }
+     
