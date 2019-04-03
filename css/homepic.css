@@ -6,15 +6,17 @@
     width: 100%;
     margin-top: 0%;
     background-color: #F8F8FF;
+    margin-bottom: 8%;
 }
 
 .hotel_booking img {
     height: 100%;
     width: 100%;
+   
 }
 
 .hotel_booking:hover {
-    height: 90%;
+   height: 60%;
     width: 90%;
     transition: circle 1s ease-in-out;
     margin-top: 0%;
@@ -221,7 +223,7 @@ h1 {
 }
 
 .haaj_umrah {
-    color: #669999;
+    color: #888844;
     text-align: center;
     font-size: 80px;
     font-family: 'Playball', cursive;
