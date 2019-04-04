@@ -24,27 +24,23 @@
         position: inherit;
         background-color: #fff5e6;
     }
-    
-    .marquee {
+    /* .marquee {
         animation: scroll-right-left 15s linear infinite;
     }
     
     @keyframes scroll-right-left {
         0% {
             -moz-transform: translateX(100%);
-            /* Firefox bug fix */
             -webkit-transform: translateX(100%);
-            /* Firefox bug fix */
             transform: translateX(100%);
         }
         100% {
             -moz-transform: translateX(-100%);
-            /* Firefox bug fix */
             -webkit-transform: translateX(-100%);
-            /* Firefox bug fix */
             transform: translateX(-100%);
         }
     }
+     */
     
     .marqueeViewer {
         background: url(images/10.png);
@@ -399,17 +395,20 @@
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
         <div class="marqueeViewer">
-            <div class="marqueePlay marquee">
-                <img class="marqueeImg" src="images\0.png">
-                <img class="marqueeImg" src="images\1.png">
-                <img class="marqueeImg" src="images\2.png">
-                <img class="marqueeImg" src="images\3.png">
-                <img class="marqueeImg" src="images\4.png">
-                <img class="marqueeImg" src="images\5.png">
-                <img class="marqueeImg" src="images\6.png">
-                <img class="marqueeImg" src="images\7.png">
-                <img class="marqueeImg" src="images\8.png">
-                <!-- <img class="marqueeImg" src="images\9.png"> -->
+            <div class="marqueePlay">
+                <marquee>
+                    <img class="marqueeImg" src="images\0.png">
+                    <img class="marqueeImg" src="images\1.png">
+                    <img class="marqueeImg" src="images\2.png">
+                    <img class="marqueeImg" src="images\3.png">
+                    <img class="marqueeImg" src="images\4.png">
+                    <img class="marqueeImg" src="images\5.png">
+                    <img class="marqueeImg" src="images\6.png">
+                    <img class="marqueeImg" src="images\7.png">
+                    <img class="marqueeImg" src="images\8.png">
+                    <!-- <img class="marqueeImg" src="images\9.png"> -->
+
+                </marquee>
 
             </div>
         </div>
