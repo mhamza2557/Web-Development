@@ -10,6 +10,30 @@
     <link rel="stylesheet" href="fontawesome-free-5.7.2-web/css/all.css">
     <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/Footer.css">
+
+    <style>
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: dimgray;
+            min-width: 130px;
+        }
+        
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
@@ -25,7 +49,14 @@
                 <h1>QUICK LINKS</h1>
                 <ul class="un-list">
                     <li><a href="Home.html">Home</a></li>
-                    <li><a href="">Services</a></li>
+                    <div class="dropdown">
+                        <a class="nav-link">Services</a>
+                        <div class="dropdown-content">
+                            <a href="#">Services 1</a>
+                            <a href="#">Services 2</a>
+                            <a href="#">Services 3</a>
+                        </div>
+                    </div>
                     <li><a href="Gallery.html">Gallery</a></li>
                     <li><a href="About-Us.html">About</a></li>
                     <li><a href="">Contact Us</a></li>
