@@ -95,14 +95,11 @@
             document.getElementById("myDropdown1").classList.toggle("show1");
         }
 
-        window.onclick = function(event) {
-            if (!event.target.matches('.dropbtn1')) {
-                var dropdowns1 = document.getElementsByClassName("dropdown1-content");
-                for (let j = 0; j < dropdowns1.length; j++) {
-                    var openDropdown1 = dropdowns1[j];
-                    if (openDropdown1.classList.contains('show1')) {
-                        openDropdown1.classList.remove('show1');
-                    }
+        window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn1')) {
+                var myDropdown = document.getElementById("myDropdown1");
+                if (myDropdown.classList.contains('show1')) {
+                    myDropdown.classList.remove('show1');
                 }
             }
         }

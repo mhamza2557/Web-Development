@@ -134,14 +134,11 @@
             document.getElementById("myDropdown2").classList.toggle("show2");
         }
 
-        window.onclick = function(event) {
-            if (!event.target.matches('.dropbtn2')) {
-                var dropdowns = document.getElementsByClassName("dropdown2-content");
-                for (let i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show2')) {
-                        openDropdown.classList.remove('show2');
-                    }
+        window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn2')) {
+                var myDropdown = document.getElementById("myDropdown2");
+                if (myDropdown.classList.contains('show2')) {
+                    myDropdown.classList.remove('show2');
                 }
             }
         }
