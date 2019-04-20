@@ -13,32 +13,34 @@
     <script src="js/jquery.min.js"></script>
 
     <style>
-        .dropdown2 {
-            /* position: relative; */
-            /* display: inline-block; */
+        .dropdown {
+            /* float: right; */
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
         }
         
-        .dropdown-content2 {
+        .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #28a745;
             min-width: 130px;
+            overflow: auto;
             z-index: 1;
+            background-color: #28a745;
         }
         
-        .dropdown-content2 a {
+        .dropdown-content a {
+            color: white;
             padding: 12px 16px;
-            display: block;
-            color: white;
-        }
-        
-        .dropdown-content2 a:hover {
-            background-color: #ddd;
             text-decoration: none;
-            color: white;
+            display: block;
         }
         
-        .dropdown2:hover .dropdown-content2 {
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        
+        .show {
             display: block;
         }
     </style>
@@ -77,9 +79,9 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="Home.html">HOME</a></li>
-                    <div class="dropdown2">
-                        <a class="nav-link">SERVICES</a>
-                        <div class="dropdown-content2">
+                    <div class="dropdown">
+                        <a onclick="clickMenu()" class="nav-link dropbtn">SERVICES</a>
+                        <div id="myDropdown" class="dropdown-content">
                             <a href="#">SERVICES 1</a>
                             <a href="#">SERVICES 2</a>
                             <a href="#">SERVICES 3</a>
@@ -123,6 +125,24 @@
                 x.type = "text";
             } else {
                 x.type = "password";
+            }
+        }
+    </script>
+
+    <script>
+        function clickMenu() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (let i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
             }
         }
     </script>
